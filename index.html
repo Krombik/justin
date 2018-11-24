@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+    <div class="navbar navbar-expand-md nav-f justify-content-center">
+        <a class="navbar-brand" href="#"><img src="img/logo_ico.png" alt=""><img src="img/logo_tel.png" alt=""></a>            
+        <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <ul class="navbar-nav hidden-menu">
+            <li><img src="img/logo.png" alt=""></li>
+            <li class="nav-item">
+                <a class="nav-link cursor placeholder-i" href="#">Отследить</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link cursor calc-i" href="#">Калькулятор</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link cursor home-i" href="#">Личный кабинет</a>
+            </li>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon close-b"></span>
+            </button>
+        </ul>        
+    </div>
+    <header class="back1">
+        <div class="main">
+            <div class="logo"><img src="img/logo.png" alt=""></div>
+            <nav class="navbar navbar-expand-sm justify-content-center">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link cursor placeholder-i" href="#">Отследить</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursor calc-i" href="#">Калькулятор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link cursor home-i" href="#">Личный кабинет</a>
+                    </li>    
+                </ul>
+            </nav>
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                <a class="carousel-control-prev arrow-button" href="#myCarousel" data-slide="prev"></a>
+                <a class="carousel-control-next arrow-button" href="#myCarousel" data-slide="next"></a>
+                <ul class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="indicator active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class="indicator"></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class="indicator"></li>
+                    <li data-target="#myCarousel" data-slide-to="3" class="indicator"></li>
+                </ul>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <p>Доставляем онлайн-заказы из любой страны по всей Украине</p>
+                        <a href="#" class="more cursor">Подробнее</a>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Быстро доставляем онлайн-заказы из США,Китая, ОАЭ, Израиля</p>
+                        <a href="#" class="more cursor">Подробнее</a>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Минимальные цены  — 1,5$ Минимальные сроки — 5 дней</p>
+                        <a href="#" class="more cursor">Подробнее</a>
+                    </div>
+                    <div class="carousel-item">
+                        <p>Все виды доставки: авиа, ЖД, морские перевозки</p>
+                        <a href="#" class="more cursor">Подробнее</a>
+                    </div>
+                </div>
+                <div class="social-network">
+                    <a href="#" class="facebook"></a>
+                    <a href="#" class="instagram"></a>
+                    <a href="#" class="googleplus"></a>
+                </div>
+            </div>
+        </div>     
+    </header>
+    <div class="short-description">
+        <div class="main">
+            <h2>Online-шоппинг с <b>Justin</b> это просто!</h2>
+            <ul>
+                <li class="shopping-bag"><span>Закажите товар в магазине</span></li>
+                <li class="wallet"><span>Оплатите свой заказ</span></li>
+                <li class="box"><span>Заберите в ближайшем отделении Justin</span></li>
+                <button class="play-button"  data-toggle="modal" data-target="#myModal"></button>
+            </ul>           
+            <div class="btn"><input type="button" value="Зарегестрировать личный кабинет"></div> 
+        </div>
+    </div>
+    <div class="delivery-info">
+        <div class="main row">
+            <div class="delivery-check col-md-6">
+                <h3>Отследите посылку</h3>
+                <input type="text" placeholder="Введите номер для отслеживания">
+                <div class="btn"><input type="button" value="Отследить"></div>                
+            </div>
+            <div class="delivery-cost col-md-6">
+                <h3>Узнайте стоимость доставки в 1 клик</h3>
+                <input type="text" placeholder="Укажите страну">
+                <input type="text" placeholder="Укажите вес заказа">
+                <input type="text" placeholder="Укажите стоимость заказа">
+                <div class="btn"><input type="button" value="Расчитать"></div>                
+            </div>
+        </div>
+    </div>
+    <div class="delivery-example">
+        <div class="main">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Пример расчета цены доставки из</h3>
+                    <p>Стоимость доставки в отделение Justin включена</p>
+                </div>
+                <div class="col-md-6 region">
+                    <select name="region" id="">
+                        <option value="china">Китай</option>
+                        <option value="usa">США</option>
+                        <option value="uae">ОАЭ</option>
+                        <option value="israel">Изариль</option>
+                        <option value="turkey">Турция</option>
+                        <option value="europe">Европа</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row items">
+                <div class="col item">
+                    <div class="img"><img src="img/item1.png" alt=""></div>
+                    <div class="item-info">
+                        <p>До 0.5 кг</p>
+                        <p>320$</p>
+                        <p>8400 грн</p>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="img"><img src="img/item2.png" alt=""></div>
+                    <div class="item-info">
+                        <p>До 0.5 кг</p>
+                        <p>320$</p>
+                        <p>8400 грн</p>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="img"><img src="img/item3.png" alt=""></div>
+                    <div class="item-info">
+                        <p>До 0.5 кг</p>
+                        <p>320$</p>
+                        <p>8400 грн</p>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="img"><img src="img/item4.png" alt=""></div>
+                    <div class="item-info">
+                        <p>До 0.5 кг</p>
+                        <p>320$</p>
+                        <p>8400 грн</p>
+                    </div>
+                </div>
+                <div class="col item">
+                    <div class="img"><img src="img/item5.png" alt=""></div>
+                    <div class="item-info">
+                        <p>До 0.5 кг</p>
+                        <p>320$</p>
+                        <p>8400 грн</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btn"><input type="button" value="Зарегестрировать личный кабинет"></div> 
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="main">
+            <h3>Преимущества нашего сервиса</h3>
+            <ul class="row">
+                <li class="col-md-7 efficiency">
+                    <h6>Оперативность</h6>
+                    <p>Доставляем международные посылки и заказы из интернет-магазинов со всего мира в Украину максимально быстро — от 5 дней</p>
+                </li>
+                <li class="col-md-5 adress">
+                    <h6>Удобное расположение отделений</h6>
+                    <p>Наши отделения расположены по всей Украине, в ваших любимых магазинах Fozzy Group</p>
+                </li>
+                <li class="col-md-7 message">
+                    <h6>Online-трекинг</h6>
+                    <p>Предоставляем услугу онлайн-трекинга и SMS-оповещения о статусе посылки.е</p>
+                </li>
+                <li class="col-md-5 protection">
+                    <h6>100% защита покупок</h6>
+                    <p>Все международные склады Justin обрудованы камерами наблюдения и надежной охранной системой</p>
+                </li>
+                <li class="col-md-7 plane">
+                    <h6>Все виды международной доставки</h6>
+                    <p>Доставляем посылки всеми видами перевозок: море, авиа, ЖД</p>
+                </li>
+                <li class="col-md-5 insurance">
+                    <h6>Страхование</h6>
+                    <p>В случае утери товара, мы возмещаем полную стоимость вашего заказа любым удобным вам способом</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="branches">
+        <div class="main">
+            <h3>Наши международные отделения</h3>
+            <ul class="row d-flex justify-content-around">
+                <li class="col-md-4">
+                    <h6 class="china">Китай</h6>
+                    <div class="btn-w"><input type="button" value="Найти отделение"></div>
+                </li>
+                <li class="col-md-4">
+                    <h6 class="usa">США</h6>
+                    <div class="btn-w"><input type="button" value="Найти отделение"></div>
+                </li>
+                <li class="col-md-4">
+                    <h6 class="uae">ОАЭ</h6>
+                    <div class="btn-w"><input type="button" value="Найти отделение"></div>
+                </li>
+                <li class="col-md-4">
+                    <h6 class="israel">Израиль</h6>
+                    <div class="btn-w"><input type="button" value="Найти отделение"></div>
+                </li>
+                <li class="col-md-4">
+                    <h6 class="turkey">Турция</h6>
+                    <div class="btn-w"><input type="button" value="Найти отделение"></div>
+                </li>
+                <li class="col-md-4">
+                    <h6 class="europe">Европа</h6>
+                    <div class="btn-w"><input type="button" value="Найти отделение"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="contacts">
+        <div class="main">
+            <h3>Контакты</h3>
+            <div class="contact d-flex justify-content-between">
+                <div class="phone-number"><i></i>0-800-301-661</div>
+                <div class="email"><a href="mailto:office@justin.ua"><i></i>office@justin.ua</a></div>
+                <div class="social-networks">
+                    <a href="" class="facebook"></a>
+                    <a href="" class="instagram"></a>
+                    <a href="" class="googleplus"></a>
+                </div>
+            </div>
+            <div class="buttons d-flex justify-content-between">
+                <div class="btn-w"><input type="button" value="Зарегестрировать личный кабинет"></div>
+                <div class="btn-w"><input type="button" value="Рассчитать стоимость"></div>
+                <div class="btn-w"><input type="button" value="Задать вопрос"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="main d-flex align-items-center justify-content-between">
+            <div class="logo_b"><img src="img/logo.png" alt=""></div>
+            <div class="copyright">© 2018 Компания Justin</div>
+            <div class="links">
+                <a href="#">Полиика конфиденциальности</a>
+                <a href="landing.ua">Разработка и поддержка Landing.ua</a>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog video" id="close_vid">
+            <div class="modal-content">
+                <iframe id="ytplayer" type="text/html" width="100%" height="450" src="https://www.youtube.com/embed/77EK89NrxyA?enablejsapi=1&modestbranding=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery331.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
