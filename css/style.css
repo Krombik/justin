@@ -914,11 +914,11 @@ footer div > div {
     max-width: 800px;    
 }
 .back2 {
-    background: url('../img/back1(2).png') no-repeat center top, url('../img/back1.png') no-repeat center top;
+    background: url('../img/back12.png') no-repeat center top, url('../img/back1.png') no-repeat center top;
     transition: 1s ease-in;
 }
 .back1 {
-    background: url('../img/back1.png') no-repeat center top, url('../img/back1(2).png') no-repeat center top;
+    background: url('../img/back1.png') no-repeat center top, url('../img/back12.png') no-repeat center top;
     transition: 1s ease-in;
 }
 
