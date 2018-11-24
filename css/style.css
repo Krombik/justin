@@ -913,12 +913,12 @@ footer div > div {
 .video {
     max-width: 800px;    
 }
-.back1 {
-    background: url('../img/back1.png') no-repeat center top;
+.back2 {
+    background: url('../img/back1(2).png') no-repeat center top, url('../img/back1.png') no-repeat center top;
     transition: 1s ease-in;
 }
-.back2 {
-    background: url('../img/back1(2).png') no-repeat center top;
+.back1 {
+    background: url('../img/back1.png') no-repeat center top, url('../img/back1(2).png') no-repeat center top;
     transition: 1s ease-in;
 }
 
